@@ -1,3 +1,106 @@
 ﻿body
 {
+    background-color: aliceblue;
+}
+
+* {
+    box-sizing: border-box
+}
+
+.slideshow-container {
+    max-width: 600px;
+    position: relative;
+    margin: auto;
+}
+
+.Containers {
+    display: none;
+    padding: 100px;
+}
+
+.Back, .forward {
+    cursor: pointer;
+    position: absolute;
+    top: 48%;
+    width: auto;
+    margin-top: -23px;
+    padding: 17px;
+    color: grey;
+    font-weight: bold;
+    font-size: 19px;
+    transition: 0.4s ease;
+    border-radius: 0 5px 5px 0;
+    user-select: none;
+}
+
+.forward {
+    right: 0;
+    border-radius: 4px 0 0 4px;
+}
+
+.Back:hover, .forward:hover {
+        background-color: rgba(0,0,0,0.8);
+}
+
+.MessageInfo {
+    color: black;
+    font-size: 14px;
+    padding: 10px 14px;
+    position: absolute;
+    top: 0;
+}
+
+.dots {
+    cursor: pointer;
+    height: 16px;
+    width: 16px;
+    margin: 0 3px;
+    background-color: #acc;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.5s ease;
+}
+
+.enable, .dots:hover {
+    background-color: #717161;
+}
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.4s;
+    animation-name: fade;
+    animation-duration: 1.4s;
+}
+
+.img1{
+    background-color: white;
+}
+
+.img2 {
+    background-color: white;
+}
+
+.img3 {
+    background-color: white;
+}
+
+
+@-webkit-keyframes fade {
+    from {
+        opacity: .5
+    }
+
+    to {
+        opacity: 2
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: .5
+    }
+
+    to {
+        opacity: 2
+    }
 }
